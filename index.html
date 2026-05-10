@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Khadga Smriti – A premier +2 Science & Management school committed to nurturing future leaders through quality education, innovation, and character." />
+  <meta name="keywords" content="school, +2, science, management, Nepal, education, college" />
+  <meta property="og:title" content="Khadga Smriti | Premier +2 School" />
+  <meta property="og:description" content="Nurturing future leaders through quality education and innovation." />
+  <meta property="og:type" content="website" />
+  <title>Khadga Smriti | Premier +2 School</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+</head>
+
+<body>
+
+  <!-- ========== LOADING SCREEN ========== -->
+  <div id="loader" class="loader" aria-label="Loading" role="status">
+    <div class="loader-inner">
+      <div class="loader-logo" style="font-size: 2rem;">Khadga Smriti Secondary School</div>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- ========== NAVBAR ========== -->
+  <header id="navbar" class="navbar" role="banner">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo" aria-label="Khadga Smriti Home">
+        <div class="logo-text">
+          <span class="logo-name">Khadga Smriti</span>
+          <span class="logo-sub">Secondary School</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navLinks" role="navigation" aria-label="Main navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#programs" class="nav-link">Programs</a>
+        <a href="#notices" class="nav-link">Notices</a>
+        <a href="#events" class="nav-link">Events</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========== HERO ========== -->
+    <section id="home" class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-gradient"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-orbs">
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+          <div class="orb orb-3"></div>
+        </div>
+        <div class="particles" id="particles" aria-hidden="true"></div>
+      </div>
+      <div class="container hero-content">
+
+        <h1 class="hero-title" data-reveal>
+          Shape Your Future<br />
+          <span class="gradient-text">With Excellence</span>
+        </h1>
+        <p class="hero-subtitle" data-reveal>
+          A premier +2 Science & Management institution dedicated to academic brilliance,
+          holistic development, and building tomorrow's leaders.
+        </p>
+        <div class="hero-actions" data-reveal>
+          <a href="#programs" class="btn btn-primary" id="exploreBtn">
+            <span>Explore Programs</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-outline" id="applyBtn">Apply Now</a>
+        </div>
+        <div class="hero-stats" data-reveal>
+          <div class="stat-item">
+            <span class="stat-number" data-count="2500">0</span>
+            <span class="stat-label">Students</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="98">0</span><span class="stat-suffix">%</span>
+            <span class="stat-label">Pass Rate</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="120">0</span>
+            <span class="stat-label">Expert Faculty</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="25">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label">Years Legacy</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TICKER ========== -->
+    <div class="ticker-wrap" aria-label="Latest notices">
+      <div class="ticker-label"><span>📢 NOTICE</span></div>
+      <div class="ticker-track" id="tickerTrack">
+        <div class="ticker-content" id="tickerContent">
+          Loading latest notices...
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== ABOUT ========== -->
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-wrap" data-reveal="left">
+            <div class="about-img-card">
+              <img src="staff_group.jpg" alt="Khadga Smriti Staff" class="about-img" loading="lazy" />
+              <div class="about-img-badge">
+                <span class="badge-year">EST.</span>
+                <span class="badge-num">2000</span>
+              </div>
+            </div>
+            <div class="about-float-card">
+              <div class="float-icon">🏆</div>
+              <div>
+                <strong>Top Ranked</strong>
+                <span>School in Region</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-content" data-reveal="right">
+            <div class="section-tag">About Us</div>
+            <h2 class="section-title">Committed to <span class="gradient-text">Academic Excellence</span></h2>
+            <p class="about-lead">Khadga Smriti has been a beacon of quality education in the region since 2000.
+              Our holistic approach combines rigorous academics with character development.</p>
+            <div class="about-features">
+              <div class="feature-item">
+                <div class="feature-icon">🔬</div>
+                <div>
+                  <strong>State-of-Art Labs</strong>
+                  <p>Fully equipped Physics, Chemistry, Biology & Computer labs</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">📚</div>
+                <div>
+                  <strong>Expert Faculty</strong>
+                  <p>120+ highly qualified and experienced educators</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">🌐</div>
+                <div>
+                  <strong>Digital Learning</strong>
+                  <p>Smart classrooms and e-learning platforms</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">⚽</div>
+                <div>
+                  <strong>Sports & Co-Curricular</strong>
+                  <p>Comprehensive sports facilities and extracurricular activities</p>
+                </div>
+              </div>
+            </div>
+            <a href="#contact" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROGRAMS ========== -->
+    <section id="programs" class="section programs">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <div class="section-tag">Our Programs</div>
+          <h2 class="section-title">Choose Your <span class="gradient-text">Path to Success</span></h2>
+          <p class="section-subtitle">Two-year +2 programs designed to prepare you for national and international
+            universities.</p>
+        </div>
+        <div class="programs-grid">
+          <div class="program-card" data-reveal>
+            <div class="program-icon">📚</div>
+            <h3>Education Stream</h3>
+            <p>Foundations of education, pedagogy, sociology, and child psychology to prepare the next generation of
+              inspiring teachers.
+            </p>
+            <ul class="program-features">
+              <li>Teaching Methodologies</li>
+              <li>Child Psychology</li>
+              <li>Sociology of Education</li>
+              <li>Practical Teaching Prep</li>
+            </ul>
+            <a href="#contact" class="btn-card">Apply Now →</a>
+          </div>
+          <div class="program-card program-featured" data-reveal>
+            <div class="program-badge">Most Popular</div>
+            <div class="program-icon">📊</div>
+            <h3>Management Stream</h3>
+            <p>Business studies, Economics, Accountancy — building future entrepreneurs and business leaders.</p>
+            <ul class="program-features">
+              <li>Business Studies</li>
+              <li>Economics & Accountancy</li>
+              <li>Entrepreneurship</li>
+              <li>Case study methods</li>
+            </ul>
+            <a href="#contact" class="btn-card">Apply Now →</a>
+          </div>
+          <div class="program-card" data-reveal>
+            <div class="program-icon">💻</div>
+            <h3>Computer Science</h3>
+            <p>Programming, database management, web technologies and modern computing fundamentals.</p>
+            <ul class="program-features">
+              <li>Python & Web Dev</li>
+              <li>Database Systems</li>
+              <li>Networking basics</li>
+              <li>Final year projects</li>
+            </ul>
+            <a href="#contact" class="btn-card">Apply Now →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== NOTICES ========== -->
+    <section id="notices" class="section notices">
+      <div class="container">
+        <div class="notices-layout">
+          <div class="notices-main">
+            <div class="section-header" data-reveal>
+              <div class="section-tag">Notices</div>
+              <h2 class="section-title">Latest <span class="gradient-text">Announcements</span></h2>
+            </div>
+            <div class="notice-filters" data-reveal>
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="academic">Academic</button>
+              <button class="filter-btn" data-filter="exam">Exam</button>
+              <button class="filter-btn" data-filter="event">Event</button>
+              <button class="filter-btn" data-filter="admission">Admission</button>
+            </div>
+            <div class="notices-list" id="noticesList">
+              <div class="loading-spinner" id="noticesLoader">
+                <div class="spinner"></div>
+              </div>
+            </div>
+            <button class="btn btn-outline load-more" id="loadMoreNotices" style="display:none">Load More</button>
+          </div>
+          <aside class="notices-sidebar" data-reveal="right">
+            <div class="sidebar-card">
+              <h3>Quick Links</h3>
+              <ul class="quick-links">
+                <li><a href="#" id="link-routine">📅 Class Routine</a></li>
+                <li><a href="#" id="link-syllabus">📖 Syllabus Download</a></li>
+                <li><a href="#" id="link-result">📊 Exam Results</a></li>
+                <li><a href="#" id="link-calendar">🗓 Academic Calendar</a></li>
+                <li><a href="#" id="link-fee">💳 Fee Structure</a></li>
+              </ul>
+            </div>
+            <div class="sidebar-card highlight-card">
+              <h3>🎓 Admissions 2025</h3>
+              <p>Applications are open for all streams. Limited seats available!</p>
+              <a href="#contact" class="btn btn-primary btn-sm">Apply Now</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EVENTS ========== -->
+    <section id="events" class="section events">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <div class="section-tag">Events</div>
+          <h2 class="section-title">Upcoming <span class="gradient-text">Events</span></h2>
+          <p class="section-subtitle">Stay connected with our vibrant school community.</p>
+        </div>
+        <div class="events-grid" id="eventsGrid">
+          <!-- Populated by JS -->
+          <div class="loading-spinner">
+            <div class="spinner"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== GALLERY ========== -->
+    <section id="gallery" class="section gallery-section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <div class="section-tag">Gallery</div>
+          <h2 class="section-title">Life at <span class="gradient-text">Khadga Smriti</span></h2>
+        </div>
+        <div class="gallery-filters" data-reveal>
+          <button class="filter-btn active" data-gallery-filter="all">All</button>
+          <button class="filter-btn" data-gallery-filter="campus">Campus</button>
+          <button class="filter-btn" data-gallery-filter="events">Events</button>
+          <button class="filter-btn" data-gallery-filter="sports">Sports</button>
+          <button class="filter-btn" data-gallery-filter="cultural">Cultural</button>
+        </div>
+        <div class="gallery-grid" id="galleryGrid">
+          <div class="loading-spinner">
+            <div class="spinner"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="section testimonials">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <div class="section-tag">Testimonials</div>
+          <h2 class="section-title">What Our <span class="gradient-text">Alumni Say</span></h2>
+        </div>
+        <div class="testimonials-track-wrap">
+          <div class="testimonials-track" id="testimonialsTrack">
+            <div class="testimonial-card">
+              <div class="testimonial-quote">"</div>
+              <p>Khadga Smriti gave me the foundation to crack the IOE entrance. The faculty's dedication and lab
+                facilities are unmatched in the region.</p>
+              <div class="testimonial-author">
+                <div class="author-avatar">RK</div>
+                <div><strong>Rajesh Kumar</strong><span>Engineering Student, IOE</span></div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-quote">"</div>
+              <p>The management program here is outstanding. My business knowledge and confidence grew tremendously. I
+                now run my own startup!</p>
+              <div class="testimonial-author">
+                <div class="author-avatar">PS</div>
+                <div><strong>Priya Sharma</strong><span>Entrepreneur & Alumni</span></div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-quote">"</div>
+              <p>Best years of my life. The teachers genuinely care about students. I secured a scholarship to study
+                abroad thanks to the skills I built here.</p>
+              <div class="testimonial-author">
+                <div class="author-avatar">AM</div>
+                <div><strong>Anil Maharjan</strong><span>MBBS Student, India</span></div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-quote">"</div>
+              <p>The extracurricular activities and sports programs shaped my personality. I'm grateful for the
+                wholesome education I received.</p>
+              <div class="testimonial-author">
+                <div class="author-avatar">SK</div>
+                <div><strong>Sunita K.C.</strong><span>National Athlete & Alumni</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-controls">
+            <button class="tc-btn" id="tcPrev" aria-label="Previous">‹</button>
+            <div class="tc-dots" id="tcDots"></div>
+            <button class="tc-btn" id="tcNext" aria-label="Next">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <div class="section-tag">Contact</div>
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <p class="section-subtitle">Have questions? We'd love to hear from you. Send us a message!</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info" data-reveal="left">
+            <div class="info-item">
+              <div class="info-icon">📍</div>
+              <div>
+                <strong>Address</strong>
+                <p>Tikapur, Sudurpaschim Province, Nepal</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">📞</div>
+              <div>
+                <strong>Phone</strong>
+                <p>+977-1-XXXXXXX</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">✉️</div>
+              <div>
+                <strong>Email</strong>
+                <p>info@excellence.edu.np</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">🕒</div>
+              <div>
+                <strong>Office Hours</strong>
+                <p>Sun–Fri: 7:00 AM – 5:00 PM</p>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="#" class="social-btn" id="fbLink" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                </svg>
+              </a>
+              <a href="#" class="social-btn" id="ytLink" aria-label="YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+                </svg>
+              </a>
+              <a href="#" class="social-btn" id="igLink" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="contact-form-wrap" data-reveal="right">
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactName">Full Name *</label>
+                  <input type="text" id="contactName" name="name" placeholder="Your name" required
+                    autocomplete="name" />
+                  <span class="form-error" id="nameError"></span>
+                </div>
+                <div class="form-group">
+                  <label for="contactEmail">Email *</label>
+                  <input type="email" id="contactEmail" name="email" placeholder="your@email.com" required
+                    autocomplete="email" />
+                  <span class="form-error" id="emailError"></span>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactPhone">Phone</label>
+                  <input type="tel" id="contactPhone" name="phone" placeholder="+977-XXXXXXXXX" autocomplete="tel" />
+                </div>
+                <div class="form-group">
+                  <label for="contactSubject">Subject *</label>
+                  <input type="text" id="contactSubject" name="subject" placeholder="How can we help?" required />
+                  <span class="form-error" id="subjectError"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contactMessage">Message *</label>
+                <textarea id="contactMessage" name="message" rows="5" placeholder="Write your message here..."
+                  required></textarea>
+                <span class="form-error" id="messageError"></span>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full" id="submitContactBtn">
+                <span id="submitBtnText">Send Message</span>
+                <div class="btn-spinner" id="btnSpinner" style="display:none"></div>
+              </button>
+              <div class="form-alert" id="formAlert" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <div class="logo-text">
+              <span class="logo-name">Khadga Smriti</span>
+              <span class="logo-sub">Secondary School</span>
+            </div>
+          </div>
+          <p>Nurturing future leaders through quality education, innovation, and excellence since 2000.</p>
+        </div>
+        <div class="footer-links-group">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#notices">Notices</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Academics</h4>
+          <ul>
+            <li><a href="#programs">Education Stream</a></li>
+            <li><a href="#programs">Management Stream</a></li>
+            <li><a href="#programs">Computer Science</a></li>
+            <li><a href="#">Entrance Prep</a></li>
+            <li><a href="#">Scholarship Info</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Stay Updated</h4>
+          <p>Subscribe to get the latest notices and updates.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" id="newsletterEmail" placeholder="Enter your email" required
+              aria-label="Newsletter email" />
+            <button type="submit" aria-label="Subscribe">→</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© <span id="footerYear"></span> Khadga Smriti. All rights reserved.</p>
+        <p>Designed by Prashant Chaudhary</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== LIGHTBOX ========== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" style="display:none">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous image">‹</button>
+    <div class="lightbox-img-wrap">
+      <img src="" alt="" id="lightboxImg" />
+      <p id="lightboxCaption"></p>
+    </div>
+    <button class="lightbox-next" id="lightboxNext" aria-label="Next image">›</button>
+  </div>
+
+  <!-- ========== BACK TO TOP ========== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
